@@ -70,7 +70,7 @@ export const warframes: Warframe[] = [
   { id: 62, name: "Nidus", type: "standard" },
   { id: 63, name: "Nidus Prime", type: "prime" },
   { id: 108, name: "Nautilus", type: "standard" },
-  { id: 108, name: "Nautilus Prime", type: "prime" },
+  { id: 109, name: "Nautilus Prime", type: "prime" },
   { id: 64, name: "Nova", type: "standard" },
   { id: 65, name: "Nova Prime", type: "prime" },
   { id: 66, name: "Nyx", type: "standard" },
