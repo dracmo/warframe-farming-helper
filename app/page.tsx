@@ -14,8 +14,10 @@ import { weaponList } from "@/lib/tabList/weaponList";
 import { archwing, Nechramech } from "@/lib/tabList/archwingList";
 import { useState, useEffect, useRef } from "react";
 import FilterPhoneMenu from "@/components/custom/filterPhone";
+import { useSyncCheckedCells } from "@/components/hooks/syncdata";
 
 export default function Home() {
+  useSyncCheckedCells();
   // Utiliser le hook personnalisé pour synchroniser les cellules cochées
   const selectedCategory = useAppStore((state) => state.selectedCategory);
   const selectedSubcategory = useAppStore((state) => state.selectedSubcategory);

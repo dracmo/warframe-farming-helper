@@ -77,6 +77,7 @@ export function useSyncCheckedCells() {
           },
           body: JSON.stringify({ checkedCells }),
         });
+        console.log("Data saved");
 
         if (!response.ok) {
           throw new Error("Failed to save data");
@@ -84,7 +85,7 @@ export function useSyncCheckedCells() {
       } catch (error) {
         console.error("Error saving data:", error);
       }
-    }, 45000); // Délai de 45 secondes
+    }, 10000); // Délai de 45 secondes
 
     // Nettoyer le timer lors du démontage
     return () => {
