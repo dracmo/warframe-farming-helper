@@ -9,15 +9,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useSession } from "next-auth/react";
-import { useEffect } from "react";
 
 export default function Login() {
-  const session = useSession(); // Vérifie si l'utilisateur est connecté
-  useEffect(() => {
-    if (session) {
-      window.location.href = "/"; // Redirige l'utilisateur connecté vers la page d'accueil
-    }
-  }, [session]);
+  const { status } = useSession(); // Vérifie si l'utilisateur est connecté
+
+  if (status === "loading") {
+    return <div>Loading...</div>; // Affiche un message de chargement pendant la vérification de la session
+  }
+
+  if (status === "authenticated") {
+    window.location.href = "/"; // Redirige l'utilisateur connecté vers la page d'accueil
+  }
 
   return (
     <div className="flex items-center justify-center min-h-screen">
