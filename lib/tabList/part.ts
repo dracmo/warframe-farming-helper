@@ -1,6 +1,11 @@
 export const warframesPart = ["BluePrint", "Chassis", "Neuroptics", "Systems"];
 
-export const weaponPart = ["Blueprint", "Barrel", "Receiver", "Stock"];
+export const weaponPart = [
+  "Blueprint",
+  "Barrel / blade",
+  "Receiver / handle",
+  "Stock / Link",
+];
 
 export const archwingPart = ["Blueprint", "Harness", "Systems", "Wings"];
 
@@ -11,9 +16,9 @@ export const allPart = [
   "Chassis",
   "Neuroptics",
   "Systems",
-  "Barrel",
-  "Receiver",
-  "Stock",
+  "Barrel / blade",
+  "Receiver / handle",
+  "Stock / Link",
   "Harness",
   "Wings",
 ];
