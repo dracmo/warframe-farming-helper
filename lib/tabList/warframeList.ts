@@ -88,6 +88,8 @@ export const warframes: Warframe[] = [
   { id: 81, name: "Sevagoth", type: "standard" },
   { id: 82, name: "Sevagoth Prime", type: "prime" },
   { id: 83, name: "Sevagoth's Shadow", type: "standard" },
+  { id: 105, name: "Shade", type: "standard" },
+  { id: 106, name: "Shade Prime", type: "prime" },
   { id: 84, name: "Styanax", type: "standard" },
   { id: 85, name: "Titania", type: "standard" },
   { id: 86, name: "Titania Prime", type: "prime" },
