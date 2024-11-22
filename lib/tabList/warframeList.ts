@@ -105,4 +105,8 @@ export const warframes: Warframe[] = [
   { id: 98, name: "Wukong", type: "standard" },
   { id: 99, name: "Wukong Prime", type: "prime" },
   { id: 100, name: "Xaku", type: "standard" },
+  { id: 101, name: "Xaku Prime", type: "prime" },
+  { id: 102, name: "Yareli", type: "standard" },
+  { id: 103, name: "Zephyr", type: "standard" },
+  { id: 104, name: "Zephyr Prime", type: "prime" },
 ];
